@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Content:</b>
+  <%= @fred_test.content %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @fred_test.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_fred_test_path(@fred_test) %> |
+<%= link_to 'Back', fred_tests_path %>

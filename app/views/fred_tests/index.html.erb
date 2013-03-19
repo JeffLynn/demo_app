@@ -1,0 +1,25 @@
+<h1>Listing fred_tests</h1>
+
+<table>
+  <tr>
+    <th>Content</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fred_tests.each do |fred_test| %>
+  <tr>
+    <td><%= fred_test.content %></td>
+    <td><%= fred_test.user_id %></td>
+    <td><%= link_to 'Show', fred_test %></td>
+    <td><%= link_to 'Edit', edit_fred_test_path(fred_test) %></td>
+    <td><%= link_to 'Destroy', fred_test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fred test', new_fred_test_path %>
